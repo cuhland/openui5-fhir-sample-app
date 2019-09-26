@@ -11,7 +11,7 @@
 		"description": "This app provides an overview to work with the UI5 FHIRModel",
 		"dataSources": {
 			"fhir": {
-				"uri": "http://hapi.fhir.org/baseR4/",
+				"uri": "http://test.fhir.org/r4/",
 				"type": "FHIR"
 			},
 			"fhir-local": {
@@ -74,7 +74,8 @@
 						"patientDetails": {
 							"submit": "Batch"
 						}
-					}
+					},
+					"x-csrf-token": true
 				}
 			},
 			"appState": {
